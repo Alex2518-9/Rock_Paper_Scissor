@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #606e85;
+    border-radius: 8px;
+    font-size: 23px;
+    color: white;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advancedTitle{
+    font-size: 16px;
+}
+
+.score{
+    background: white;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 30%;
+}
+
+.score h4{
+    color: #2a46c0;
+    font-size: 14px;
+    align-self: end;
+}
+
+.score h1{
+    color: #3b4363;
+    font-size: 20px;
+    align-self: start;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        width: 80%;
+    }
+    .score{
+        width: 40%;
+    }
+}
