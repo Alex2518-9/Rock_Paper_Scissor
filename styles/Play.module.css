@@ -8,6 +8,7 @@
   .playbuttons {
     position: absolute;
     top: 0;
+    transform: none;
     left: 0;
     display: grid;
     place-items: center;
@@ -34,7 +35,7 @@
       "rock paper"
       "sci sci";
   }
-  .scissor,
+  .scissors,
   .sci2,
   .rock2,
   .rock,
@@ -46,23 +47,23 @@
     width: 100px;
     height: 100px;
     position: relative;
-  
+    
     visibility: visible !important;
     box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
   }
 
-.scissor{
+.scissors{
     grid-area: sci;
     justify-self: center;
     align-self: end;
-    background-image: linear-gradient(#ec9e0e,#eca922);
+    background-image: linear-gradient(#32a8a8,#4bc9c9);
 }
 
 .sci2{
     grid-area: sci;
     justify-self: center;
     align-self: end;
-    background-image: linear-gradient(#ec9e0e,#eca922);
+    background-image: linear-gradient(#32a8a8,#4bc9c9);
 }
 
 .rock{
@@ -80,13 +81,13 @@
 .paper{
     grid-area: paper;
     justify-self: end;
-    background-image: linear-gradient(#4865f4,#5671f5);
+    background-image: linear-gradient(#eba309,#edb742);
 }
 
 .paper2{
     grid-area: paper;
     justify-self: center;
-    background-image: linear-gradient(#4865f4,#5671f5);
+    background-image: linear-gradient(#eba309,#edb742);
 }
 
 .lizard{
@@ -97,7 +98,7 @@
 
 .spock{
     grid-area: spock;
-    background-image: linear-gradient(#40b9ce,#52bed1);
+    background-image: linear-gradient(#0abf25,#3fd956);
 }
 
 .inside{
@@ -159,7 +160,7 @@
         height: 70%;
         box-shadow: inset 0 10px rgba(0, 0, 0, 0.15);
       }
-      .scissor,
+      .scissors,
       .sci2,
       .rock2,
       .rock,
@@ -171,7 +172,7 @@
         width: 120px;
         height: 120px;
         position: relative;
-    
+        
         visibility: visible !important;
         box-shadow: inset 0 -8px rgba(0, 0, 0, 0.15);
       }

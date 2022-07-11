@@ -10,7 +10,7 @@ import { Results } from "../components/Results";
 
 export default function Home() {
 
-  const [ advancedMode, setAdvancedMode ] = useState(false);
+  const [ advancedMode, setAdvancedMode ] = useState(true);
   const [ open, setOpen ] = useState(false);
   const [ selected, setSelected ] = useState(-1); // ez lesz az id a play buttonon keresztül a választott objectnek
   const [score, setScore] = useState(0);

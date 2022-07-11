@@ -1,4 +1,4 @@
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { AnimateSharedLayout, domAnimation, LazyMotion, motion } from "framer-motion";
 import React, { FunctionComponent } from "react";
 import styles from "../styles/Play.module.css";
 import Button from "./Button";
@@ -14,13 +14,13 @@ const PlayButtons: FunctionComponent<PlayButtonProps> = ({
 }) => {
   return (
     <AnimateSharedLayout>
-      <motion.div className={styles.playbuttons}>
+      <motion.div style={{opacity: 1}} className={styles.playbuttons}>
         {advanced ? (
           <div className={styles.threegrid}>
             <Button
               onClicK={() => onCLick(0)}
-              classN={styles.scissor}
-              lid="scissor"
+              classN={styles.scissors}
+              lid="scissors"
             >
               <img src="/icon-scissors.svg" alt="" />
             </Button>
@@ -32,6 +32,7 @@ const PlayButtons: FunctionComponent<PlayButtonProps> = ({
               onClicK={() => onCLick(1)}
               classN={styles.paper}
               lid="paper"
+              
             >
               <img src="/icon-paper.svg" alt="" />
             </Button>

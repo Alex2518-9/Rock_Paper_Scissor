@@ -1,6 +1,6 @@
 export const GameRules = [
     {
-        value: "scissor",
+        value: "scissors",
         beats: ["paper", "lizard"],
     },
     {
@@ -9,11 +9,11 @@ export const GameRules = [
     },
     {
         value: "rock",
-        beats: ["scissor", "lizard"],
+        beats: ["scissors", "lizard"],
     },
     {
         value: "spock",
-        beats: ["scissor", "rock"],
+        beats: ["scissors", "rock"],
     },
     {
         value: "lizard",

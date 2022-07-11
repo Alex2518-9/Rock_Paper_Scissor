@@ -32,13 +32,13 @@ export const Results: FunctionComponent<ResultsProps> = ({
       setHouse(GameRules[randomNum].value);
       if (GameRules[randomNum].beats.includes(userSelected)) {
         setResult("Lose");
-        setscore((score:any) => score - 1);
+        setscore((score:number) => score - 1);
       } else {
         if (GameRules[randomNum].value === userSelected) {
           setResult("Tie");
         } else {
           setResult("win");
-          setscore((score:any) => score + 1);
+          setscore((score:number) => score + 1);
         }
       }
     }, 2000);
